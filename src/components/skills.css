@@ -1,0 +1,29 @@
+.skill-container {
+  width: 400%;
+  height: 50vh;
+  background-color: red;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.skill-container > * {
+  animation: slide 15s linear infinite;
+  width: 20%;
+  height: 50%;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

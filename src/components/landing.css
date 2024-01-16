@@ -1,0 +1,40 @@
+.landing-page {
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 100vh;
+}
+
+.name-description-container {
+  height: 100%;
+  width: 50%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 100px;
+  margin: 0;
+}
+
+.description {
+  font-size: 20px;
+  width: 90%;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  /* background-color: blue; */
+}
+
+.image-container img {
+  height: 90%;
+}

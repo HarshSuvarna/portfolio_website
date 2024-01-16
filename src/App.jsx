@@ -1,12 +1,17 @@
 import { useState } from "react";
-
-import "./App.css";
+import Landing from "./components/Landing";
+import Projects from "./components/Projects";
+import Reviews from "./components/Reviews";
+import Skills from "./components/Skills";
 
 function App() {
   return (
     <>
-      <div className="landing-page">asdfasdf</div>
-      <div className="landing-page">sdfasfasdfi</div>
+      <Landing />
+      <Projects />
+      <Reviews />
+      <Skills />
+      experience download my resume certificates contact me
     </>
   );
 }
