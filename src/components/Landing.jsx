@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./landing.css";
+import "../app.css";
+import { gsap } from "gsap";
+
 function Landing() {
   const [time, setTime] = useState("");
   const [year, setYear] = useState("");
@@ -29,8 +32,10 @@ function Landing() {
       setTime(currentTime);
     }, 1000);
   }, [time]);
+
+  gsap.to(".image-container", { duration: 1, y: "0%" });
   return (
-    <div className="landing-page" data-scroll-section>
+    <div className="landing-page">
       <div className="name-description-container">
         <p className="name">Harsh </p>
         <p className="name">Suvarna</p>

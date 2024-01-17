@@ -4,7 +4,7 @@ import "./review.css";
 function Reviews() {
   return (
     <div className="review-title-cards">
-      <p className="review-title-cards-p">Read what they say about me</p>
+      <p data-scroll data-scroll-speed="0.03" className="review-title-cards-p">Read what they say about me</p>
       <div className="review-container">
         <div className="review">
           <div className="description-container">

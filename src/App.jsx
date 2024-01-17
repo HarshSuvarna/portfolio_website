@@ -5,9 +5,22 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import TopButton from "./components/TopButton";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import "./app.css";
 function App() {
+  useLayoutEffect(() => {
+    // gsap.registerPlugin(ScrollTrigger);
+    // const timeline = gsap.timeline({
+    //   scrollTrigger: {
+    //     trigger: document.documentElement,
+    //     start: 0,
+    //     end: "+=500px",
+    //     scrub: true,
+    //     markers: true,
+    //   },
+    // });
+  });
+
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
@@ -23,7 +36,7 @@ function App() {
       <Reviews />
       <Skills />
       <Contact />
-      {/* experience download my resume certificates contact me */}
+      {/* experience certificates */}
     </>
   );
 }

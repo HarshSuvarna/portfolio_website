@@ -1,15 +1,16 @@
 import React from "react";
 import "./projects.css";
+import "../app.css";
 
 function Projects() {
   return (
     <div className="projects-container">
       <div className="left-container">
         <div className="project-title">Projects</div>
-        <div className="project">
+        <div data-scroll data-scroll-speed="0.23" className="project">
           <div className="project-title-img">
             <img src="images/butik.png" alt="" />
-            <div className="project-name-description">
+            <div  className="project-name-description">
               <p>
                 Butik is a web app which helps you to browse shops near you and
                 the products they have
@@ -25,7 +26,7 @@ function Projects() {
           </div>
         </div> */}
       </div>
-      <div className="right-container">
+      <div data-scroll data-scroll-speed="0.1" className="right-container">
         <div className="project">
           <div className="project-title-img">
             <img src="images/mpc.png" alt="" />
