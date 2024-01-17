@@ -6,7 +6,7 @@ import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import TopButton from "./components/TopButton";
 import { useEffect } from "react";
-
+import "./app.css";
 function App() {
   useEffect(() => {
     (async () => {
@@ -15,7 +15,7 @@ function App() {
     })();
   }, []);
   return (
-    <div data-scroll-container>
+    <>
       <TopButton />
       <Navbar />
       <Landing />
@@ -24,7 +24,7 @@ function App() {
       <Skills />
       <Contact />
       {/* experience download my resume certificates contact me */}
-    </div>
+    </>
   );
 }
 
