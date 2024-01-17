@@ -54,13 +54,13 @@
   height: 60%;
   border-radius: 20px;
   /* transform: scale(1.5); */
-  transition: all 0.3s;
-  filter: brightness(0.92);
+  transition: all 0.8s;
+  filter: invert(0.92);
+  opacity: 0.87;
 }
-
 .project-title-img img:hover {
   transform: scale(1.01);
-  filter: brightness(0.95);
+  opacity: 0.95;
 }
 
 .project-name-description {
