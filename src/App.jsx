@@ -3,13 +3,13 @@ import Projects from "./components/Projects";
 import Reviews from "./components/Reviews";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-import LocomotiveScroll from "locomotive-scroll";
+// import LocomotiveScroll from "locomotive-scroll";
 import "./app.css";
 import Navbar from "./components/Navbar";
 import TopButton from "./components/TopButton";
 
 function App() {
-  const locomotiveScroll = new LocomotiveScroll();
+  // const locomotiveScroll = new LocomotiveScroll();
   // const scroll = new LocomotiveScroll({
   //   el: document.querySelector("data-scroll-container"),
   //   smooth: true,
