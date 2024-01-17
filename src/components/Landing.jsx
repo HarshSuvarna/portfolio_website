@@ -30,7 +30,7 @@ function Landing() {
     }, 1000);
   }, [time]);
   return (
-    <div className="landing-page">
+    <div className="landing-page" data-scroll-section>
       <div className="name-description-container">
         <p className="name">Harsh </p>
         <p className="name">Suvarna</p>

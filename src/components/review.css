@@ -11,24 +11,32 @@
 }
 
 .review {
-  /* background-color: red; */
-  background-color: white;
+  background: transparent;
+  border: 1px solid rgba(8, 8, 8, 0.225);
   width: 100%;
-  max-height: 85%;
+  max-height: 70%;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: start;
   flex-direction: column;
   border-radius: 20px;
   box-sizing: border-box;
   padding: 15px;
+  color: #0000009c;
 }
-
 .review-title-cards {
   width: 100%;
 }
 
-.review-title-cards p {
+.org-name {
+  width: 50%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.review-title-cards-p {
   font-size: 70px;
   margin-bottom: 0;
   padding: 0% 5%;
@@ -42,11 +50,26 @@
 
 .review span {
   width: 82%;
-  font-size: 17px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.review-giver-info {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 17px;
+  width: 100%;
 }
 .description-container {
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   /* align-items: start; */
   text-overflow: ellipsis;

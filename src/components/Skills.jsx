@@ -4,60 +4,34 @@ function Skills() {
   return (
     <>
       <div className="skill-container">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>
-        <div>10</div>
-        <div>11</div>
+        <span>
+          <p>Skills</p>
+          <p className="description">
+            I am an enthusiastic learner and believe in continuous learning.
+            Here are a few toots and technologies I've worked with as a
+            professional, hobbiest and a student
+          </p>
+        </span>
+        <ul>
+          <li>Javascript</li>
+          <li>Typescript</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>MySQL</li>
+          <li>API/JSON</li>
+          <li>MongoDB</li>
+          <li>HTML/CSS</li>
+        </ul>
 
-        <div>12</div>
-
-        <div>13</div>
-
-        <div>14</div>
-
-        <div>15</div>
-
-        <div>16</div>
-
-        <div>17</div>
-        <div>18</div>
-        <div>19</div>
-        <div>20</div>
-      </div>
-      <div className="skill-container">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>
-        <div>10</div>
-        <div>11</div>
-
-        <div>12</div>
-
-        <div>13</div>
-
-        <div>14</div>
-
-        <div>15</div>
-
-        <div>16</div>
-
-        <div>17</div>
-        <div>18</div>
-        <div>19</div>
-        <div>20</div>
+        <ul>
+          <li>AWS</li>
+          <li>Git</li>
+          <li>Docker</li>
+          <li>GCP</li>
+          <li>React</li>
+          <li>FastApi</li>
+          <li>NestJs</li>
+        </ul>
       </div>
     </>
   );

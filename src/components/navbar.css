@@ -1,0 +1,26 @@
+.navbar-container {
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+  margin-right: 28rem;
+}
+
+.navbar-container li {
+  /* width: 100px; */
+  /* max-width: 199px; */
+  margin: 0;
+  padding: 0px 9px;
+  border-radius: 1px;
+  transition: all 0.3s;
+  /* background: red; */
+  /* width: 116px; */
+}
+
+.navbar-container li:hover {
+  background-color: rgba(70, 70, 70, 0.599);
+  color: #ededed;
+}

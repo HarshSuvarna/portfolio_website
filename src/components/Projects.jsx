@@ -8,7 +8,7 @@ function Projects() {
         <div className="project-title">Projects</div>
         <div className="project">
           <div className="project-title-img">
-            <img src="images/butik2.png" alt="" />
+            <img src="images/butik.png" alt="" />
             <div className="project-name-description">
               <p>
                 Butik is a web app which helps you to browse shops near you and
