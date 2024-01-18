@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./landing.css";
 import "../app.css";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 function Landing() {
   const [time, setTime] = useState("");
@@ -33,7 +34,17 @@ function Landing() {
     }, 1000);
   }, [time]);
 
-  gsap.to(".image-container", { duration: 1, y: "0%" });
+  gsap.to(".image-container", { duration: 1, y: "0%", ease: "expo.inOut" });
+
+  const imgRef = useRef(null);
+  // useEffect(() => {
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.to(imgRef.current, {
+    scrollTrigger: imgRef,
+    height: 100,
+    duration: 3,
+  });
+  // }, []);
   return (
     <div className="landing-page">
       <div className="name-description-container">
@@ -48,7 +59,7 @@ function Landing() {
           &nbsp;days {minutes} minutes {seconds} seconds.
         </p>
       </div>
-      <div className="image-container">
+      <div className="image-container" ref={imgRef}>
         <img src="/images/harshImg2.jpg" alt="" />
       </div>
     </div>
