@@ -25,7 +25,7 @@
   color: #0000009c;
   cursor: pointer;
 }
-.review-title-cards {
+#recommendations {
   width: 100%;
 }
 
@@ -37,7 +37,7 @@
   font-weight: bold;
 }
 
-.review-title-cards-p {
+.recommendations-p {
   font-size: 70px;
   margin-bottom: 0;
   padding: 0% 5%;

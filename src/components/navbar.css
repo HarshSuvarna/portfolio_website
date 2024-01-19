@@ -6,7 +6,7 @@
   align-items: center;
   gap: 20px;
   list-style-type: none;
-  margin-right: 28rem;
+  margin-right: 15rem;
   cursor: pointer;
 }
 
@@ -25,5 +25,3 @@
   background-color: rgba(70, 70, 70, 0.599);
   color: #ededed;
 }
-
-

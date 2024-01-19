@@ -1,4 +1,4 @@
-.skill-container {
+#skills {
   width: 100%;
   height: 50vh;
   background: linear-gradient(147deg, #dadada, transparent);
@@ -10,7 +10,7 @@
   white-space: nowrap;
 }
 
-.skill-container > * {
+#skills > * {
   animation: slide 15s linear infinite;
   width: 26%;
   height: 50%;
@@ -18,13 +18,13 @@
   justify-content: center;
   align-items: center;
 }
-.skill-container p {
+#skills p {
   font-size: 70px;
   text-align: start;
   width: 100%;
 }
 
-.skill-container ul {
+#skills ul {
   display: flex;
   justify-content: center;
   align-items: start;
@@ -43,7 +43,7 @@ span {
 span p {
   margin: 0;
 }
-span .description {
+#skills span .description {
   font-size: 15px;
   text-wrap: wrap;
 }

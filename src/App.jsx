@@ -10,41 +10,21 @@ import { useLayoutEffect } from "react";
 import "./app.css";
 
 function App() {
-  const landingRef = useRef(null);
-  const projectsRef = useRef(null);
-  const reviewsRef = useRef(null);
-  const skillsRef = useRef(null);
-  const contactRef = useRef(null);
-
   useLayoutEffect(() => {
-    // Initialize Locomotive Scroll
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
       new LocomotiveScroll();
     })();
   }, []);
-
-  const scrollToSection = (ref) => {
-    console.log("clicke", ref);
-    // if (ref && ref.current) {
-    projectsRef?.current?.scrollIntoView({ behavior: "smooth" });
-    // }
-  };
-
   return (
     <>
       <TopButton />
-      <Navbar
-        onProjectsClick={() => scrollToSection(projectsRef)}
-        onReviewsClick={() => scrollToSection(reviewsRef)}
-        onSkillsClick={() => scrollToSection(skillsRef)}
-        onContactClick={() => scrollToSection(contactRef)}
-      />
-      <Landing reference={landingRef} />
-      <Projects reference={projectsRef} />
-      <Reviews reference={reviewsRef} />
-      <Skills reference={skillsRef} />
-      <Contact reference={contactRef} />
+      <Navbar />
+      <Landing />
+      <Projects />
+      <Reviews />
+      <Skills />
+      <Contact />
       {/* experience certificates */}
     </>
   );

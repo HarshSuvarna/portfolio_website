@@ -9,9 +9,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.top i {
   color: #cdcdcd;
+}
+
+.top:hover {
+  color: white;
+  background-color: #3c3c3c6b;
+}
+
+.top i {
   font-size: 30px;
   cursor: pointer;
 }

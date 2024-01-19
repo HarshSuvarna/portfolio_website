@@ -1,25 +1,32 @@
 import React from "react";
 import "./navbar.css";
-
-function Navbar({
-  onProjectsClick,
-  onReviewsClick,
-  onSkillsClick,
-  onContactClick,
-}) {
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import Pdf from "../../public/files/harshsuvarnaCV.pdf";
+function Navbar() {
   return (
     <ul className="navbar-container">
-      <li onClick={() => onProjectsClick()} className="tab">
-        Projects
+      <li className="tab">
+        <AnchorLink offset="-60" href="#projects">
+          Projects
+        </AnchorLink>
       </li>
-      <li onClick={onReviewsClick()} className="tab">
-        Recommendations
+      <li className="tab">
+        <AnchorLink offset="-60" href="#recommendations">
+          Recommendations
+        </AnchorLink>
       </li>
-      <li onClick={onSkillsClick()} className="tab">
-        Skills
+      <li className="tab">
+        <AnchorLink offset="120" href="#skills">
+          Skills
+        </AnchorLink>
       </li>
-      <li onClick={onContactClick()} className="tab">
-        Contact
+      <li className="tab">
+        <AnchorLink href="#contact">Contact</AnchorLink>
+      </li>
+      <li className="tab">
+        <a href={Pdf} target="_blank">
+          Download CV
+        </a>
       </li>
     </ul>
   );

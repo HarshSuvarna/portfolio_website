@@ -22,7 +22,7 @@ function Skills() {
   };
   return (
     <>
-      <div className="skill-container">
+      <div id="skills">
         <span>
           <p>Skills</p>
           <motion.p

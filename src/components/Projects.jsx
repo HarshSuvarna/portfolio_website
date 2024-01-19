@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./projects.css";
 import "../app.css";
 
-function Projects({ projectsRef }) {
+function Projects() {
   return (
-    <div className="projects-container" ref={projectsRef}>
+    <div id="projects">
       <div className="left-container">
         <div className="project-title">Projects</div>
         <div data-scroll data-scroll-speed="0.23" className="project">

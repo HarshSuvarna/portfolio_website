@@ -5,7 +5,7 @@ function Contact() {
   const emailUrl = `mailto:harsh.suvarna9962@gmail.com?subject=${"Website"}&body=${"Hi Harsh,"}`;
   const whatsappUrl = `https://wa.me/+447741875686?text=${"Hi Harsh"}`;
   return (
-    <div className="contact-parent">
+    <div id="contact">
       <div className="contact-container">
         <div className="upper-container">
           <div className="upper-left">

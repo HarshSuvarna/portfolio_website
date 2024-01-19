@@ -53,7 +53,7 @@ function Landing({ reference }) {
   };
 
   return (
-    <div className="landing-page">
+    <div id="landing-page">
       <motion.div
         className="name-description-container"
         variants={container}
