@@ -77,12 +77,12 @@ function Landing({ reference }) {
         </motion.p>
       </motion.div>
       <div className="image-container" ref={reference}>
-        <motion.img
+        <img
           animate={{ opacity: 1, x: -50 }}
           initial={{ opacity: 0, x: -30 }}
           transition={{ duration: 1, delay: 1.5 }}
           src="/images/harshImg2.jpg"
-          alt=""
+          className="image-container-img"
         />
       </div>
     </div>

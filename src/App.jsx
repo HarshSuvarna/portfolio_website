@@ -21,10 +21,10 @@ function App() {
       <TopButton />
       <Navbar />
       <Landing />
-      {/* <Projects /> */}
-      {/* <Reviews /> */}
-      {/* <Skills /> */}
-      {/* <Contact /> */}
+      <Projects />
+      <Reviews />
+      <Skills />
+      <Contact />
       {/* experience certificates */}
     </>
   );

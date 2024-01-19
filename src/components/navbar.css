@@ -25,3 +25,18 @@
   background-color: rgba(70, 70, 70, 0.599);
   color: #ededed;
 }
+
+@media (max-width: 450px) {
+  .navbar-container {
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+    margin-right: 3rem;
+    cursor: pointer;
+    font-size: 8px;
+  }
+}

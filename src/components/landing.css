@@ -56,7 +56,11 @@
     flex: 1;
   }
 
-  
+  .image-container-img {
+    height: 10rem;
+    animation: blur-img 2.7s ease-in;
+    margin-left: 82%;
+  }
 }
 
 .image-container {
@@ -68,8 +72,8 @@
   /* background-color: blue; */
 }
 
-.image-container img {
-  height: 20%;
+.image-container-img {
+  height: 32rem;
   animation: blur-img 2.7s ease-in;
 }
 
