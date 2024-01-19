@@ -10,21 +10,21 @@ import { useLayoutEffect } from "react";
 import "./app.css";
 
 function App() {
-  useLayoutEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      new LocomotiveScroll();
-    })();
-  }, []);
+  // useLayoutEffect(() => {
+  //   (async () => {
+  //     const LocomotiveScroll = (await import("locomotive-scroll")).default;
+  //     new LocomotiveScroll();
+  //   })();
+  // }, []);
   return (
     <>
       <TopButton />
       <Navbar />
       <Landing />
-      <Projects />
-      <Reviews />
-      <Skills />
-      <Contact />
+      {/* <Projects /> */}
+      {/* <Reviews /> */}
+      {/* <Skills /> */}
+      {/* <Contact /> */}
       {/* experience certificates */}
     </>
   );

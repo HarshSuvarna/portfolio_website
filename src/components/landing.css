@@ -26,6 +26,39 @@
   font-size: 20px;
   width: 90%;
 }
+
+@media (max-width: 450px) {
+  .description {
+    font-size: 14px;
+    width: 90%;
+  }
+  .name {
+    font-size: 29px;
+    margin: 0;
+  }
+  .name-description-container {
+    height: 100%;
+    width: 54%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* width: 50%; */
+    /* background-color: blue; */
+    flex: 1;
+  }
+
+  
+}
+
 .image-container {
   display: flex;
   justify-content: center;
@@ -36,7 +69,7 @@
 }
 
 .image-container img {
-  height: 70%;
+  height: 20%;
   animation: blur-img 2.7s ease-in;
 }
 
