@@ -31,7 +31,7 @@ function Projects() {
           <div className="project-title-img">
             <img src="images/mpc.png" alt="" />
             <div className="project-name-description">
-              Using Model Predictive Controller, a car drives itself to the
+              Using Model Predictive Control action, a car drives itself to the
               parking spot avoiding the obstacle
             </div>
           </div>

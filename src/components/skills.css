@@ -6,7 +6,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 5%;
   white-space: nowrap;
 }
 
@@ -46,4 +46,12 @@ span p {
 span .description {
   font-size: 15px;
   text-wrap: wrap;
+}
+
+.description-slills-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15%;
 }

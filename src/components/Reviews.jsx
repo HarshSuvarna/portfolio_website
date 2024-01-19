@@ -1,12 +1,47 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
 import "./review.css";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 function Reviews() {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1.33 1"],
+  });
+  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2]);
+  const container = {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+        duration: 7,
+      },
+    },
+  };
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
   return (
     <div className="review-title-cards">
-      <p data-scroll data-scroll-speed="0.03" className="review-title-cards-p">Read what they say about me</p>
-      <div className="review-container">
-        <div className="review">
+      <p data-scroll data-scroll-speed="0.03" className="review-title-cards-p">
+        Read what they say about me
+      </p>
+      <motion.div
+        className="review-container"
+        ref={ref}
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 3, type: "tween" }}
+      >
+        <motion.div className="review" variants={item}>
           <div className="description-container">
             <span>
               "It was a pleasure to have Harsh on the team from CODE B working
@@ -23,8 +58,8 @@ function Reviews() {
             <p className="bold">John Hathaway</p>
             <p className="org-name">Co-founder Meahana</p>
           </div>
-        </div>
-        <div className="review">
+        </motion.div>
+        <motion.div className="review" variants={item}>
           <div className="description-container">
             <span>
               "I had the pleasure of working with Harsh for almost a year on one
@@ -39,8 +74,8 @@ function Reviews() {
             <p className="bold">Dhaval Gala</p>
             <p className="org-name">Director Code B</p>
           </div>
-        </div>
-        <div className="review">
+        </motion.div>
+        <motion.div className="review" variants={item}>
           {/* <img src="images/judy-d.png" alt="" /> */}
           <div className="description-container">
             <span>
@@ -57,9 +92,9 @@ function Reviews() {
             <p className="bold">Judy Winnie Dsouza</p>
             <p className="org-name">Partner D'vastra</p>
           </div>
-        </div>
+        </motion.div>
         {/* <div className="review">asdfasdf</div> */}
-      </div>
+      </motion.div>
     </div>
   );
 }

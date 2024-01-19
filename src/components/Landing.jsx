@@ -1,10 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./landing.css";
 import "../app.css";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import { motion } from "framer-motion";
 
-function Landing() {
+function Landing({ reference }) {
   const [time, setTime] = useState("");
   const [year, setYear] = useState("");
   const [month, setMonth] = useState("");
@@ -34,33 +33,57 @@ function Landing() {
     }, 1000);
   }, [time]);
 
-  gsap.to(".image-container", { duration: 1, y: "0%", ease: "expo.inOut" });
+  const container = {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.3,
+        duration: 1,
+      },
+    },
+  };
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
 
-  const imgRef = useRef(null);
-  // useEffect(() => {
-  gsap.registerPlugin(ScrollTrigger);
-  gsap.to(imgRef.current, {
-    scrollTrigger: imgRef,
-    height: 100,
-    duration: 3,
-  });
-  // }, []);
   return (
     <div className="landing-page">
-      <div className="name-description-container">
-        <p className="name">Harsh </p>
-        <p className="name">Suvarna</p>
-        <p className="description">
+      <motion.div
+        className="name-description-container"
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 3, type: "tween" }}
+      >
+        <motion.p variants={item} className="name">
+          Harsh{" "}
+        </motion.p>
+        <motion.p variants={item} className="name">
+          Suvarna
+        </motion.p>
+        <motion.p variants={item} className="description">
           Hello there, I am Harsh, a 24-year-old passionate Software Developer,
           based in the United Kingdom. Currently I am persuing Masters degree in
           Information Technology at University of Glasgow. I have 1.5 years of
           professional experience. I have been coding since {year} years {month}{" "}
           months {day}
           &nbsp;days {minutes} minutes {seconds} seconds.
-        </p>
-      </div>
-      <div className="image-container" ref={imgRef}>
-        <img src="/images/harshImg2.jpg" alt="" />
+        </motion.p>
+      </motion.div>
+      <div className="image-container" ref={reference}>
+        <motion.img
+          animate={{ opacity: 1, x: -50 }}
+          initial={{ opacity: 0, x: -30 }}
+          transition={{ duration: 1, delay: 1.5 }}
+          src="/images/harshImg2.jpg"
+          alt=""
+        />
       </div>
     </div>
   );

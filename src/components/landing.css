@@ -37,4 +37,14 @@
 
 .image-container img {
   height: 70%;
+  animation: blur-img 2.7s ease-in;
+}
+
+@keyframes blur-img {
+  from {
+    filter: blur(4px);
+  }
+  to {
+    filter: blue(0px);
+  }
 }

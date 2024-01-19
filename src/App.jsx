@@ -5,22 +5,12 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import TopButton from "./components/TopButton";
-import { useEffect, useLayoutEffect } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 import "./app.css";
-function App() {
-  useLayoutEffect(() => {
-    // gsap.registerPlugin(ScrollTrigger);
-    // const timeline = gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: document.documentElement,
-    //     start: 0,
-    //     end: "+=500px",
-    //     scrub: true,
-    //     markers: true,
-    //   },
-    // });
-  });
 
+function App() {
+  useLayoutEffect(() => {});
+  const imgRef = useRef(null);
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
@@ -31,7 +21,7 @@ function App() {
     <>
       <TopButton />
       <Navbar />
-      <Landing />
+      <Landing reference={imgRef} />
       <Projects />
       <Reviews />
       <Skills />
