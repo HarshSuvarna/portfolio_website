@@ -31,7 +31,7 @@ function Reviews() {
   };
   return (
     <div className="review-title-cards">
-      <p data-scroll data-scroll-speed="0.03" className="review-title-cards-p">
+      <p data-scroll data-scroll-speed="0.02" className="review-title-cards-p">
         Read what they say about me
       </p>
       <motion.div

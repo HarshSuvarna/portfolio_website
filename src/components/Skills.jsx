@@ -2,6 +2,24 @@ import React from "react";
 import "./skills.css";
 import { motion } from "framer-motion";
 function Skills() {
+  const container = {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.4,
+        duration: 4,
+      },
+    },
+  };
+  const item = {
+    hidden: { x: 30, opacity: 0 },
+    visible: {
+      x: 0,
+      opacity: 1,
+    },
+  };
   return (
     <>
       <div className="skill-container">
@@ -10,7 +28,7 @@ function Skills() {
           <motion.p
             whileInView={{ opacity: 1 }}
             initial={{ opacity: 0 }}
-            transition={{ duration: 1, delay: 0.3 }}
+            transition={{ delay: 0.3 }}
             className="description"
           >
             I am an enthusiastic learner who believes in continuous learning.
@@ -19,12 +37,16 @@ function Skills() {
           </motion.p>
         </span>
         <motion.div
-          whileInView={{ x: 0, opacity: 1 }}
-          initial={{ x: 100, opacity: 0 }}
-          transition={{ duration: 1 }}
+          variants={container}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 3, type: "tween" }}
           className="description-slills-container"
         >
-          <ul>
+          <motion.ul
+            variants={item}
+            transition={{ duration: 1, type: "tween" }}
+          >
             <li>Javascript</li>
             <li>Typescript</li>
             <li>Python</li>
@@ -33,9 +55,12 @@ function Skills() {
             <li>API/JSON</li>
             <li>MongoDB</li>
             <li>HTML/CSS</li>
-          </ul>
+          </motion.ul>
 
-          <ul>
+          <motion.ul
+            variants={item}
+            transition={{ duration: 0.8, type: "tween" }}
+          >
             <li>AWS</li>
             <li>Git</li>
             <li>Docker</li>
@@ -43,7 +68,7 @@ function Skills() {
             <li>React</li>
             <li>FastApi</li>
             <li>NestJs</li>
-          </ul>
+          </motion.ul>
         </motion.div>
       </div>
     </>

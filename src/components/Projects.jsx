@@ -20,7 +20,7 @@ function Projects({ projectsRef }) {
           >
             <img src="images/butik.png" alt="" />
             <div className="project-name-description">
-              <p>
+              <p style={{ margin: "0" }}>
                 Butik is a web app which helps you to browse shops near you and
                 the products they have
               </p>
