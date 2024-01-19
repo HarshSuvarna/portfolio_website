@@ -65,6 +65,7 @@
   align-items: start;
   flex-direction: column;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .flex {
@@ -94,6 +95,13 @@
 .box span p:hover {
   font-size: 40px;
 }
+.box p {
+  transition: all 0.3s;
+}
+
+.box p:hover {
+  color: rgb(135, 135, 135);
+}
 
 .below-container {
   width: 100%;
@@ -102,6 +110,7 @@
   align-items: start;
   height: 50%;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .below-container p {
@@ -115,8 +124,12 @@
 .email {
   font-size: 60px;
   border-bottom: 2px solid #ffffff17;
+  transition: all 0.2s;
 }
-
+.email:hover {
+  color: rgb(148, 137, 137);
+  border-bottom: 2px solid rgba(148, 137, 137, 0.332);
+}
 .heading-color {
   color: #44484b;
 }

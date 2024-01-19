@@ -2,15 +2,24 @@ import React from "react";
 import "./projects.css";
 import "../app.css";
 
-function Projects() {
+function Projects({ projectsRef }) {
   return (
-    <div className="projects-container">
+    <div className="projects-container" ref={projectsRef}>
       <div className="left-container">
         <div className="project-title">Projects</div>
         <div data-scroll data-scroll-speed="0.23" className="project">
-          <div className="project-title-img">
+          <div
+            className="project-title-img"
+            onClick={() =>
+              window.open(
+                "https://butikstore.netlify.app/",
+                "_blank",
+                "noreferrer"
+              )
+            }
+          >
             <img src="images/butik.png" alt="" />
-            <div  className="project-name-description">
+            <div className="project-name-description">
               <p>
                 Butik is a web app which helps you to browse shops near you and
                 the products they have
@@ -28,7 +37,16 @@ function Projects() {
       </div>
       <div data-scroll data-scroll-speed="0.1" className="right-container">
         <div className="project">
-          <div className="project-title-img">
+          <div
+            className="project-title-img"
+            onClick={() =>
+              window.open(
+                "https://github.com/HarshSuvarna/ModelPredictiveControl-Parking",
+                "_blank",
+                "noreferrer"
+              )
+            }
+          >
             <img src="images/mpc.png" alt="" />
             <div className="project-name-description">
               Using Model Predictive Control action, a car drives itself to the

@@ -23,6 +23,7 @@
   box-sizing: border-box;
   padding: 15px;
   color: #0000009c;
+  cursor: pointer;
 }
 .review-title-cards {
   width: 100%;
@@ -73,4 +74,8 @@
   overflow: hidden;
   /* align-items: start; */
   text-overflow: ellipsis;
+}
+
+a {
+  color: #0000009c;
 }
