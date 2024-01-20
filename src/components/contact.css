@@ -172,10 +172,10 @@
     margin-bottom: 70px;
   }
   .upper-left button {
-    width: 70%;
+    width: 80%;
     border-radius: 2px;
     padding: 4% 1%;
-    background: #172125;
+    background: #232e32;
     color: #d0d0d0;
     transition: all 0.3s;
     font-size: 13px;
