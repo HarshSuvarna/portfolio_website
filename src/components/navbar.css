@@ -10,6 +10,11 @@
   cursor: pointer;
 }
 
+li a {
+  text-decoration: none;
+  color: #383838;
+}
+
 .navbar-container li {
   /* width: 100px; */
   /* max-width: 199px; */
@@ -23,7 +28,7 @@
 
 .navbar-container li:hover {
   background-color: rgba(70, 70, 70, 0.599);
-  color: #ededed;
+  color: #212121;
 }
 
 @media (max-width: 450px) {
