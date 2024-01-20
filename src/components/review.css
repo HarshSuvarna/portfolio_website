@@ -77,14 +77,14 @@
 }
 
 .description-container a {
-  color: #0000009c;
+  color:  rgb(39, 39, 39);
   text-decoration: none;
 }
 
 @media (max-width: 450px) {
   .review {
     background: transparent;
-    border: 1px solid rgba(200, 200, 200, 0.225);
+    border: 1px solid;
     width: 100%;
     max-height: 70%;
     display: flex;
@@ -94,7 +94,7 @@
     border-radius: 20px;
     box-sizing: border-box;
     padding: 15px;
-    color: #d0d0d09c;
+    /* color: #d0d0d09c; */
     cursor: pointer;
   }
 
@@ -120,6 +120,6 @@
   }
 
   .description-container a {
-    color: #d0d0d09c;
+    /* color: #d0d0d09c; */
   }
 }

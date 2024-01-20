@@ -140,7 +140,7 @@
 
 @media (max-width: 450px) {
   .contact-container {
-    height: 80vh;
+    height: 60vh;
     background-color: #151b1e;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
@@ -219,7 +219,8 @@
     height: 50%;
     flex-direction: column;
     cursor: pointer;
-  }
+    height: 25%;
+}
 
   .send-email {
     font-size: 16px;

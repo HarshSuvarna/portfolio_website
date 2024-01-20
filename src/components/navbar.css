@@ -44,4 +44,9 @@ li a {
     cursor: pointer;
     font-size: 8px;
   }
+
+  li a {
+    text-decoration: none;
+    /* color: #d0d0d0; */
+  }
 }
