@@ -81,6 +81,22 @@ a {
 }
 
 @media (max-width: 450px) {
+  .review {
+    background: transparent;
+    border: 1px solid rgba(200, 200, 200, 0.225);
+    width: 100%;
+    max-height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 15px;
+    color: #d0d0d09c;
+    cursor: pointer;
+  }
+
   .recommendations-p {
     font-size: 45px;
     margin-bottom: 0;

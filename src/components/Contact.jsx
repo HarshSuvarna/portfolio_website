@@ -9,7 +9,7 @@ function Contact() {
       <div className="contact-container">
         <div className="upper-container">
           <div className="upper-left">
-            <p style={{ fontSize: "35px" }}>Harsh Suvarna</p>
+            <p>Harsh Suvarna</p>
             <a style={{ color: "#d0d0d0" }} href={Pdf} target="_blank">
               <button>Download my CV</button>
             </a>

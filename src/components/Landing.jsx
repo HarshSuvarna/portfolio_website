@@ -62,7 +62,7 @@ function Landing({ reference }) {
         transition={{ duration: 3, type: "tween" }}
       >
         <motion.p variants={item} className="name">
-          Harsh{" "}
+          Harsh
         </motion.p>
         <motion.p variants={item} className="name">
           Suvarna
@@ -77,7 +77,7 @@ function Landing({ reference }) {
         </motion.p>
       </motion.div>
       <div className="image-container" ref={reference}>
-        <img
+        <motion.img
           animate={{ opacity: 1, x: -50 }}
           initial={{ opacity: 0, x: -30 }}
           transition={{ duration: 1, delay: 1.5 }}

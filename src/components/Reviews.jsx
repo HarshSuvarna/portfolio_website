@@ -10,7 +10,6 @@ function Reviews() {
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
-  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2]);
   const container = {
     hidden: { opacity: 1 },
     visible: {
