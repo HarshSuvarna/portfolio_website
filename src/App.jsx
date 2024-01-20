@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Landing from "./components/Landing";
 import Projects from "./components/Projects";
 import Reviews from "./components/Reviews";
@@ -10,15 +10,22 @@ import { useLayoutEffect } from "react";
 import "./app.css";
 
 function App() {
+  const [showTopButton, setShowTopButton] = useState();
   useLayoutEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
       new LocomotiveScroll();
     })();
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 500) {
+        setShowTopButton(true);
+      } else setShowTopButton(false);
+    });
   }, []);
   return (
     <>
-      <TopButton />
+      <TopButton showTopButton={showTopButton} />
       <Navbar />
       <Landing />
       <Projects />

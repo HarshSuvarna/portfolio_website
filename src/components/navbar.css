@@ -31,7 +31,7 @@ li a {
   color: #212121;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 770px) {
   .navbar-container {
     width: 100%;
     /* background-color: red; */

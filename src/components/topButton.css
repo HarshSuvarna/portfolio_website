@@ -12,6 +12,10 @@
   color: #cdcdcd;
 }
 
+.top.hide {
+  visibility: hidden;
+}
+
 .top:hover {
   color: white;
   background-color: #3c3c3c6b;
@@ -22,7 +26,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 770px) {
   .top {
     background-color: #0000006b;
     height: 30px;

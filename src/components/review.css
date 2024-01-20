@@ -81,7 +81,7 @@
   text-decoration: none;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 770px) {
   .review {
     background: transparent;
     /* border: 1px solid #5050509c; */
