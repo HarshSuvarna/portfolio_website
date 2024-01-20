@@ -77,14 +77,15 @@
 }
 
 .description-container a {
-  color:  rgb(39, 39, 39);
+  color: #0000009c;
   text-decoration: none;
 }
 
 @media (max-width: 450px) {
   .review {
     background: transparent;
-    border: 1px solid;
+    /* border: 1px solid #5050509c; */
+    background-color: rgba(221, 221, 221, 0.682);
     width: 100%;
     max-height: 70%;
     display: flex;
@@ -120,6 +121,6 @@
   }
 
   .description-container a {
-    /* color: #d0d0d09c; */
+    color: #0000009c;
   }
 }
