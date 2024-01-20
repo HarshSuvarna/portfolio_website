@@ -11,7 +11,7 @@ function Contact() {
           <div className="upper-left">
             <p>Harsh Suvarna</p>
             <a style={{ color: "#d0d0d0" }} href={Pdf} target="_blank">
-              <button>Download my CV</button>
+              <button>My CV</button>
             </a>
           </div>
           <div className="upper-right">
