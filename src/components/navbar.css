@@ -40,10 +40,11 @@ li a {
     align-items: center;
     gap: 20px;
     list-style-type: none;
-    margin-right: 3rem;
+    /* margin-right: 3rem; */
     cursor: pointer;
     font-size: 8px;
     background-color: rgba(221, 221, 221, 0.682);
+    margin: 0px 2rem 0px 0px;
   }
 
   li a {
