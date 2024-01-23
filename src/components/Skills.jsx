@@ -25,7 +25,7 @@ function Skills() {
       <div id="skills">
         <span>
           <p>Skills</p>
-          <motion.span
+          <motion.div
             whileInView={{ opacity: 1 }}
             initial={{ opacity: 0 }}
             transition={{ delay: 0.3 }}
@@ -34,7 +34,7 @@ function Skills() {
             I am an enthusiastic learner who believes in continuous learning.
             Here are the tools and technologies I've worked with as a
             professional, hobbiest and a student
-          </motion.span>
+          </motion.div>
         </span>
         <motion.div
           variants={container}
