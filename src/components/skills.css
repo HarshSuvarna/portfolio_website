@@ -46,6 +46,7 @@ span p {
 #skills span .description {
   font-size: 15px;
   text-wrap: wrap;
+  width: 100%;
 }
 
 .description-slills-container {
@@ -55,7 +56,6 @@ span p {
   justify-content: center;
   gap: 15%;
 }
-
 
 @media (max-width: 770px) {
   #skills {
@@ -68,35 +68,36 @@ span p {
     justify-content: center;
     gap: 5%;
     white-space: nowrap;
-}
+  }
 
-#skills p {
-  font-size: 43px;
-  text-align: start;
-  width: 100%;
-}
+  #skills p {
+    font-size: 43px;
+    text-align: start;
+    width: 100%;
+  }
 
-#skills span .description {
-  font-size: 15px;
-  text-wrap: wrap;
-}
+  #skills span .description {
+    font-size: 15px;
+    text-wrap: wrap;
+    width: 100%;
+  }
 
-#skills > * {
-  animation: slide 15s linear infinite;
-  width: 38%;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  #skills > * {
+    animation: slide 15s linear infinite;
+    width: 38%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-#skills ul {
-  width: 37%;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-direction: column;
-  font-size: 14px;
-  list-style-type: none;
-}
+  #skills ul {
+    width: 37%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    font-size: 14px;
+    list-style-type: none;
+  }
 }
