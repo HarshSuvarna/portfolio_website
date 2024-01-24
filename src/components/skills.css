@@ -44,7 +44,7 @@ span p {
   margin: 0;
 }
 
-.description {
+#skills span .description {
   font-size: 15px;
   text-wrap: wrap;
   width: 100%;
@@ -77,7 +77,7 @@ span p {
     width: 100%;
   }
 
-  .description {
+  #skills span .description {
     font-size: 15px;
     text-wrap: wrap;
     width: 100%;
