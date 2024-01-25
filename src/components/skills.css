@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   gap: 5%;
-  white-space: nowrap;
+  white-space: pre;
 }
 
 #skills > * {
@@ -68,7 +68,7 @@ span p {
     align-items: center;
     justify-content: center;
     gap: 5%;
-    white-space: nowrap;
+    white-space: pre;
   }
 
   #skills p {
