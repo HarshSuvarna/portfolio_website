@@ -21,7 +21,7 @@ export const educationAndExperience = [
     role: "Analyst in Business Consulting",
     image: "/images/EY_t.png",
     description:
-      "At an Analyst in EY, I conducted concurrent audits on banking products, including RTGS and NEFT, identifying loopholes and streamlining processes. Achieved a 60% audit time reduction using EY Digicube. Conducted planned and surprise audits across diverse locations, recommending critical changes, such as storing welcome kits in fireproof locked cabinets, adopted nationwide based on my findings.",
+      "At an Analyst in EY, I conducted concurrent audits on banking products, including RTGS and NEFT, identifying loopholes and streamlining processes. Achieved a 60% audit time reduction using EY Digicube. Conducted planned and surprise audits across diverse locations, recommending critical changes, such as storing welcome kits in fireproof locked cabinets, adopted nationwide based on my findings.Earned the EY 'I am Exceptional' award for displaying outstanding and innovative intellectual contributions.",
   },
   {
     year: "Jul 2017 - Jun 2021",

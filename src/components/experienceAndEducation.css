@@ -50,6 +50,8 @@
 
 .org-name-div {
   font-size: 25px;
+  border-right: 1px solid #00000033;
+  padding-right: 7px;
 }
 
 .year-div {
@@ -88,6 +90,9 @@ a {
     font-size: 55px;
     padding: 0% 2%;
     margin: 0;
+  }
+  .exp-edu-container:active {
+    background-color: transparent;
   }
   .image-description-container {
     /* background-color: red; */
