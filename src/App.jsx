@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import TopButton from "./components/TopButton";
 import { useLayoutEffect } from "react";
 import "./app.css";
+import ExperienceAndEducation from "./components/ExperienceAndEducation";
 
 function App() {
   const [showTopButton, setShowTopButton] = useState();
@@ -31,6 +32,7 @@ function App() {
       <Projects />
       <Reviews />
       <Skills />
+      <ExperienceAndEducation />
       <Contact />
       {/* experience certificates */}
     </>

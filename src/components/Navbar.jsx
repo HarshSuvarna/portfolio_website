@@ -16,9 +16,12 @@ function Navbar() {
         </AnchorLink>
       </li>
       <li className="tab">
-        <AnchorLink offset="120" href="#skills">
+        <AnchorLink offset="175" href="#skills">
           Skills
         </AnchorLink>
+      </li>
+      <li className="tab">
+        <AnchorLink href="#experience">Experience</AnchorLink>
       </li>
       <li className="tab">
         <AnchorLink href="#contact">Contact</AnchorLink>
