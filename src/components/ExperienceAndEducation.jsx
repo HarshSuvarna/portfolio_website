@@ -56,7 +56,7 @@ function ExperienceAndEducation() {
     },
     {
       year: "Jul 2017 - Jun 2021",
-      orgName: "Mumbai University",
+      orgName: "University of Mumbai",
       role: "B.E. Instrumentation",
       image: "/images/MU.jpg",
       description: (
