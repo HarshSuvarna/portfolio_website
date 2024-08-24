@@ -69,10 +69,10 @@ function Landing({ reference }) {
         </motion.p>
         <motion.p variants={item} className="description">
           Hello there, I am Harsh, a 24-year-old passionate Software Developer,
-          based in the United Kingdom. Currently I am persuing Masters degree in
-          Information Technology at University of Glasgow. I have 1.5 years of
-          professional experience. I have been coding since {year} years {month}{" "}
-          months {day}
+          based in the London. Experienced Professional with a Masters Degree in
+          Information Technology from the University of Glasgow, having 1.5
+          years of corporate experience. I have been coding since {year}{" "}
+          years {month} months {day}
           &nbsp;days {minutes} minutes {seconds} seconds.
         </motion.p>
       </motion.div>

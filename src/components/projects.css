@@ -23,6 +23,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 4rem;
 }
 
 .project-title {
@@ -49,15 +50,19 @@
   box-sizing: border-box;
 }
 
-.project-title-img img {
+.image-container {
   width: 90%;
   height: 60%;
   border-radius: 20px;
   /* transform: scale(1.5); */
   transition: all 0.8s;
-  filter: invert(0.92);
   opacity: 0.87;
 }
+
+.invert {
+  filter: invert(0.92);
+}
+
 .project-title-img img:hover {
   transform: scale(1.01);
   opacity: 0.95;

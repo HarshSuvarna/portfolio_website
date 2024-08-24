@@ -12,13 +12,17 @@ function Projects() {
             className="project-title-img"
             onClick={() =>
               window.open(
-                "https://butikstore.netlify.app/",
+                "https://github.com/HarshSuvarna/Butik",
                 "_blank",
                 "noreferrer"
               )
             }
           >
-            <img src="images/butik.png" alt="" />
+            <img
+              className="image-container invert"
+              src="images/butik.png"
+              alt=""
+            />
             <div className="project-name-description">
               <p style={{ margin: "0" }}>
                 Butik is a web app which helps you to browse shops near you and
@@ -35,7 +39,30 @@ function Projects() {
           </div>
         </div> */}
       </div>
-      <div data-scroll data-scroll-speed="0.1" className="right-container">
+      <div data-scroll data-scroll-speed="0.35" className="right-container">
+        <div className="project">
+          <div
+            className="project-title-img"
+            onClick={() =>
+              window.open(
+                "https://cybersafe-rose.vercel.app/home",
+                "_blank",
+                "noreferrer"
+              )
+            }
+          >
+            <img
+              className="image-container"
+              src="images/cybersafe.png"
+              alt=""
+            />
+            <div className="project-name-description">
+              Cybersafe helps you create and manage attack trees easily. Design
+              strategies, collaborate securely, and visualize threats
+              effectively with an intuitive, user-friendly interface.
+            </div>
+          </div>
+        </div>
         <div className="project">
           <div
             className="project-title-img"
@@ -47,7 +74,11 @@ function Projects() {
               )
             }
           >
-            <img src="images/mpc.png" alt="" />
+            <img
+              className="image-container invert"
+              src="images/mpc.png"
+              alt=""
+            />
             <div className="project-name-description">
               Using Model Predictive Control action, a car drives itself to the
               parking spot avoiding the obstacle
@@ -55,6 +86,11 @@ function Projects() {
           </div>
         </div>
       </div>
+      {/* <div
+        data-scroll
+        data-scroll-speed="0.1"
+        className="right-container"
+      ></div> */}
     </div>
   );
 }
