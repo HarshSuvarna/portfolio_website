@@ -1,6 +1,6 @@
 export const educationAndExperience = [
   {
-    year: "Sep 2023 - Current",
+    year: "Sep 2023 - Aug 2024",
     orgName: "Universtiy of Glasgow",
     role: "MSc. Information Technology",
     image: "/images/UofG_t.jpg",
